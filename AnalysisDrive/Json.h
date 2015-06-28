@@ -11,6 +11,7 @@
 #include <string>
 #include <vector>
 #include <map>
+#include <ostream>
 
 /** Analysis Drive */
 namespace adlib
@@ -37,13 +38,13 @@ private:
   std::unique_ptr<Impl> m_impl;
 
 public:
-/**
- * コンストラクタ
- * @remarks 引数なしのコンストラクタではnullのJSONオブジェクトを作成する
- * @note std::map<std::string, Json>を存在しないキーでアクセスした場合, <br>
- *       本コンストラクタによってJsonが新規登録される. <br>
- *       これにより, 存在しないキーでアクセスするとnullと同様の値になる.
- */
+  /**
+   * コンストラクタ
+   * @remarks 引数なしのコンストラクタではnullのJSONオブジェクトを作成する
+   * @note std::map<std::string, Json>を存在しないキーでアクセスした場合, <br>
+   *       本コンストラクタによってJsonが新規登録される. <br>
+   *       これにより, 存在しないキーでアクセスするとnullと同様の値になる.
+   */
   Json();
 
   /**
@@ -210,6 +211,18 @@ public:
    * @return object値
    */
   const std::map<std::string, Json>& GetObject() const;
+
+  /**
+   * JSON形式の文字列を出力
+   * @param[in,out] outStream 出力先のストリーム
+   */
+  void Dump(std::ostream* outStream) const;
+
+  /**
+   * MessagePack形式のバイナリを出力
+   * @param[in,out] outStream 出力先のストリーム
+   */
+  void DumpMsgpack(std::ostream* outStream) const;
 };
 }
 #endif // ANALYSISDRIVE_JSON_H_

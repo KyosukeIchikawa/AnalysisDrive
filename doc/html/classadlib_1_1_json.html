@@ -184,11 +184,15 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a31b04805f091976dcf016a1697cb4077"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8acc4d44c59fba7d160093df9ed718ee"><td class="memItemLeft" align="right" valign="top">const std::map&lt; std::string, <a class="el" href="classadlib_1_1_json.html">Json</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classadlib_1_1_json.html#a8acc4d44c59fba7d160093df9ed718ee">GetObject</a> () const </td></tr>
 <tr class="separator:a8acc4d44c59fba7d160093df9ed718ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8954faec3d6d06fd8d00f5ff78bbfce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classadlib_1_1_json.html#ae8954faec3d6d06fd8d00f5ff78bbfce">Dump</a> (std::ostream *outStream) const </td></tr>
+<tr class="separator:ae8954faec3d6d06fd8d00f5ff78bbfce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7cf38f616a1d4bbc1f266ae8257c538"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classadlib_1_1_json.html#af7cf38f616a1d4bbc1f266ae8257c538">DumpMsgpack</a> (std::ostream *outStream) const </td></tr>
+<tr class="separator:af7cf38f616a1d4bbc1f266ae8257c538"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>JSONオブジェクト </p>
 
-<p>Definition at line <a class="el" href="_json_8h_source.html#l00019">19</a> of file <a class="el" href="_json_8h_source.html">Json.h</a>.</p>
+<p>Definition at line <a class="el" href="_json_8h_source.html#l00020">20</a> of file <a class="el" href="_json_8h_source.html">Json.h</a>.</p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a class="anchor" id="a2e02ea63c01083f8f3fbff38ddcd156e"></a>
 <div class="memitem">
@@ -225,7 +229,7 @@ Public Member Functions</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="_json_8h_source.html#l00023">23</a> of file <a class="el" href="_json_8h_source.html">Json.h</a>.</p>
+<p>Definition at line <a class="el" href="_json_8h_source.html#l00024">24</a> of file <a class="el" href="_json_8h_source.html">Json.h</a>.</p>
 
 </div>
 </div>
@@ -528,6 +532,50 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="ae8954faec3d6d06fd8d00f5ff78bbfce"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void adlib::Json::Dump </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream *&#160;</td>
+          <td class="paramname"><em>outStream</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>JSON形式の文字列を出力 </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">outStream</td><td>出力先のストリーム </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="af7cf38f616a1d4bbc1f266ae8257c538"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void adlib::Json::DumpMsgpack </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream *&#160;</td>
+          <td class="paramname"><em>outStream</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>MessagePack形式のバイナリを出力 </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">outStream</td><td>出力先のストリーム </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="a3450686976adf67399aba59ae0e78af9"></a>
 <div class="memitem">
 <div class="memproto">
@@ -828,7 +876,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 29 2015 00:21:08 for Analysis Drive by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jun 29 2015 02:12:36 for Analysis Drive by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

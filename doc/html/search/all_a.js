@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['object',['OBJECT',['../classadlib_1_1_json.html#a2e02ea63c01083f8f3fbff38ddcd156ea8adfaa0c3b0bef8ee140895283864372',1,'adlib::Json']]],
-  ['operator_21_3d',['operator!=',['../classadlib_1_1_command_line_setting.html#ac73c901c86d0dc3fba758949af91c11b',1,'adlib::CommandLineSetting']]],
-  ['operator_3d',['operator=',['../classadlib_1_1_command_line_setting.html#a87aa9c709163342b25569155198cc66d',1,'adlib::CommandLineSetting::operator=()'],['../classadlib_1_1_json.html#a0903fff906f4214083609082023d9b84',1,'adlib::Json::operator=()']]],
-  ['operator_3d_3d',['operator==',['../classadlib_1_1_command_line_setting.html#aab3ecc492f92185dbd43e13aa045d504',1,'adlib::CommandLineSetting']]]
+  ['nul',['NUL',['../classadlib_1_1_json.html#a2e02ea63c01083f8f3fbff38ddcd156ea674e3ada16bc7b3a3b86097bc8297961',1,'adlib::Json']]],
+  ['number_5fdouble',['NUMBER_DOUBLE',['../classadlib_1_1_json.html#a2e02ea63c01083f8f3fbff38ddcd156ea56c90fef01956f72849ae07397d24d6b',1,'adlib::Json']]],
+  ['number_5fint',['NUMBER_INT',['../classadlib_1_1_json.html#a2e02ea63c01083f8f3fbff38ddcd156eaa05edff27330c914544a139761d18682',1,'adlib::Json']]],
+  ['numberofparameter',['NumberOfParameter',['../classadlib_1_1_command_line_setting.html#a976035054f1eac3e9cc13b87bae200de',1,'adlib::CommandLineSetting']]]
 ];

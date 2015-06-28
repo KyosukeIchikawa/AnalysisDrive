@@ -1,5 +1,12 @@
 var searchData=
 [
-  ['json',['Json',['../classadlib_1_1_json.html#a4926b8736e456faa0d434565323460c2',1,'adlib::Json::Json()'],['../classadlib_1_1_json.html#af3ac910c36bcc069f444e0bc8b533358',1,'adlib::Json::Json(std::nullptr_t value)'],['../classadlib_1_1_json.html#af81c94eab93cd17edff0581ebca44398',1,'adlib::Json::Json(const std::string &amp;value)'],['../classadlib_1_1_json.html#aa0b1a22736d6105ee99761fc6617078c',1,'adlib::Json::Json(int value)'],['../classadlib_1_1_json.html#a7f76e70232ed3ef153b64dfe41506f12',1,'adlib::Json::Json(double value)'],['../classadlib_1_1_json.html#a33c93a60e7116f1f1b009d812a76d7d8',1,'adlib::Json::Json(bool value)'],['../classadlib_1_1_json.html#a690a7527930a3359aab359913b5c4c51',1,'adlib::Json::Json(const std::vector&lt; Json &gt; &amp;value)'],['../classadlib_1_1_json.html#a234a2e20155c62f643e0d8e166679aae',1,'adlib::Json::Json(const std::map&lt; std::string, Json &gt; &amp;value)'],['../classadlib_1_1_json.html#a7101f94c944b269682a05dec09afe649',1,'adlib::Json::Json(const Json &amp;obj)'],['../classadlib_1_1_json.html#a65a4deff8147ead817d74056c2532590',1,'adlib::Json::Json(Json &amp;&amp;obj)']]],
-  ['jsonparser',['JsonParser',['../classadlib_1_1_json_parser.html#aa97382e47cadda61a280399fdad3ca5c',1,'adlib::JsonParser']]]
+  ['isarray',['IsArray',['../classadlib_1_1_json.html#ab7018ecb6ad2e944788836b7a6d2a193',1,'adlib::Json']]],
+  ['isbool',['IsBool',['../classadlib_1_1_json.html#a8544533bf450bf6082ca92956e342999',1,'adlib::Json']]],
+  ['isnamerepeated',['IsNameRepeated',['../classadlib_1_1_json_parser.html#a5fe551826017b1447b065de2cfb342f3',1,'adlib::JsonParser::IsNameRepeated()'],['../classadlib_1_1_msgpack_parser.html#afdecba3ba90b3795c9a6fcd70d796651',1,'adlib::MsgpackParser::IsNameRepeated()']]],
+  ['isnull',['IsNull',['../classadlib_1_1_json.html#a10dcde4f3d5fd2b4897d59c2982ebb08',1,'adlib::Json']]],
+  ['isnumber',['IsNumber',['../classadlib_1_1_json.html#a940a2aadcef94de1f8a391386bd60a4c',1,'adlib::Json']]],
+  ['isnumberdouble',['IsNumberDouble',['../classadlib_1_1_json.html#ab6894a2723d6d5741c4a156495ab06ce',1,'adlib::Json']]],
+  ['isnumberint',['IsNumberInt',['../classadlib_1_1_json.html#a2d14814fe7812051fef57946f3005526',1,'adlib::Json']]],
+  ['isobject',['IsObject',['../classadlib_1_1_json.html#a88a2a300c0855d59373f0324b0692de8',1,'adlib::Json']]],
+  ['isstring',['IsString',['../classadlib_1_1_json.html#a8528f6a8d364f49f2b4872968dac38d3',1,'adlib::Json']]]
 ];

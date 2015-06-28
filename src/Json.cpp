@@ -355,4 +355,22 @@ const std::map<std::string, Json>& Json::GetObject() const
 {
   return m_impl->m_jsonValue->GetObject();
 }
+
+/**
+ * JSON形式の文字列を出力
+ * @param[in,out] outStream 出力先のストリーム
+ */
+void Json::Dump(std::ostream* outStream) const
+{
+  m_impl->m_jsonValue->Dump(outStream);
+}
+
+/**
+ * MessagePack形式のバイナリを出力
+ * @param[in,out] outStream 出力先のストリーム
+ */
+void Json::DumpMsgpack(std::ostream* outStream) const
+{
+  m_impl->m_jsonValue->DumpMsgpack(outStream);
+}
 }

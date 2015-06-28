@@ -9,6 +9,7 @@
 
 #include "JsonValue.h"
 #include "Json.h"
+#include "IncludeMsgpack.h"
 
 /** Analysis Drive */
 namespace adlib
@@ -54,6 +55,31 @@ public:
   bool GetBool() const override
   {
     return m_value;
+  }
+
+  /**
+   * JSON形式の文字列を出力
+   * @param[in,out] outStream 出力先のストリーム
+   */
+  void Dump(std::ostream* outStream) const override
+  {
+    if (m_value)
+    {
+      *outStream << "true" << std::flush;
+    }
+    else
+    {
+      *outStream << "false" << std::flush;
+    }
+  }
+
+  /**
+   * MessagePack形式のバイナリを出力
+   * @param[in,out] outStream 出力先のストリーム
+   */
+  void DumpMsgpack(std::ostream* outStream) const override
+  {
+    msgpack::pack(outStream, m_value);
   }
 };
 }

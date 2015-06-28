@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['parse',['Parse',['../classadlib_1_1_command_line_parser.html#a6ca6be08a98f2ca01057efcee6caf0c9',1,'adlib::CommandLineParser::Parse()'],['../classadlib_1_1_json_parser.html#a7aafba3cef77fcf0f50c1a899cdd12e4',1,'adlib::JsonParser::Parse()']]],
-  ['prefix',['Prefix',['../classadlib_1_1_command.html#afd40fcf1851cbecf6e5b51e721c7d964',1,'adlib::Command::Prefix()'],['../classadlib_1_1_command_line_setting.html#aed3266bd91d63d81e56a42a640b7846b',1,'adlib::CommandLineSetting::Prefix()']]]
+  ['numberofparameter',['NumberOfParameter',['../classadlib_1_1_command_line_setting.html#a976035054f1eac3e9cc13b87bae200de',1,'adlib::CommandLineSetting']]]
 ];

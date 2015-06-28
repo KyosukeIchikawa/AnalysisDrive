@@ -9,6 +9,7 @@
 
 #include "JsonValue.h"
 #include "Json.h"
+#include "IncludeMsgpack.h"
 #include <vector>
 
 /** Analysis Drive */
@@ -73,6 +74,60 @@ public:
   const std::vector<Json>& GetArray() const override
   {
     return m_value;
+  }
+
+  /**
+   * JSON形式の文字列を出力
+   * @param[in,out] outStream 出力先のストリーム
+   */
+  void Dump(std::ostream* outStream) const override
+  {
+    // 前括弧
+    *outStream << "[";
+    // 要素がある場合のみ出力処理を行う
+    if (m_value.size() > 0)
+    {
+      // イテレータ取得
+      auto it = m_value.begin();
+      // 要素数ループ
+      while (true)
+      {
+        // 出力
+        it->Dump(outStream);
+        // イテレータを進める
+        it++;
+        // 終わりでない場合
+        if (it != m_value.end())
+        {
+          // カンマを出力
+          *outStream << ",";
+        }
+        // 終わりの場合
+        else
+        {
+          break;
+        }
+      }
+    }
+    // 後括弧
+    *outStream << "]" << std::flush;
+  }
+
+  /**
+   * MessagePack形式のバイナリを出力
+   * @param[in,out] outStream 出力先のストリーム
+   */
+  void DumpMsgpack(std::ostream* outStream) const override
+  {
+    msgpack::packer<std::ostream> pk(outStream);
+    // arrayサイズを指定
+    pk.pack_array(m_value.size());
+    // 要素数出力
+    for (auto it = m_value.begin(); it != m_value.end(); ++it)
+    {
+      // 出力
+      it->DumpMsgpack(outStream);
+    }
   }
 };
 }

@@ -9,6 +9,7 @@
 
 #include "JsonValue.h"
 #include "Json.h"
+#include "IncludeMsgpack.h"
 
 /** Analysis Drive */
 namespace adlib
@@ -41,6 +42,24 @@ public:
   Json::JSON_VALUE_TYPE GetValueType() const override
   {
     return Json::JSON_VALUE_TYPE::NUL;
+  }
+
+  /**
+   * JSON形式の文字列を出力
+   * @param[in,out] outStream 出力先のストリーム
+   */
+  void Dump(std::ostream* outStream) const override
+  {
+    *outStream << "null" << std::flush;
+  }
+
+  /**
+   * MessagePack形式のバイナリを出力
+   * @param[in,out] outStream 出力先のストリーム
+   */
+  void DumpMsgpack(std::ostream* outStream) const override
+  {
+    msgpack::pack(outStream, msgpack::type::nil());
   }
 };
 }

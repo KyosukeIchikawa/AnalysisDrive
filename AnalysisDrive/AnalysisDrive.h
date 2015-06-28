@@ -17,6 +17,8 @@
 /* JSON処理 */
 #include "Json.h"               // JSONオブジェクト
 #include "JsonParser.h"         // JSONパーサー
+/* MessgaePack処理 */
+#include "MsgpackParser.h"      // MessagePackパーサー
 /* その他 */
 #include "EasyTimer.h"          // 時間計測
 

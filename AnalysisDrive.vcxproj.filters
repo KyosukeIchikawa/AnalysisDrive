@@ -57,6 +57,12 @@
     <ClInclude Include="AnalysisDrive\EasyTimer.h">
       <Filter>AnalysisDrive</Filter>
     </ClInclude>
+    <ClInclude Include="inc\IncludeMsgpack.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="AnalysisDrive\MsgpackParser.h">
+      <Filter>AnalysisDrive</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\CommandLineSetting.cpp">
@@ -78,6 +84,9 @@
       <Filter>src</Filter>
     </ClCompile>
     <ClCompile Include="src\EasyTimer.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MsgpackParser.cpp">
       <Filter>src</Filter>
     </ClCompile>
   </ItemGroup>

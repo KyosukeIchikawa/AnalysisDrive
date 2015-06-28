@@ -9,6 +9,7 @@
 
 #include "JsonValue.h"
 #include "Json.h"
+#include "IncludeMsgpack.h"
 #include <string>
 
 /** Analysis Drive */
@@ -19,7 +20,7 @@ class JsonValueString final : public JsonValue
 {
 private:
   //! 値
-  const std::string m_value;
+  std::string m_value;
 
 private:
   /** デフォルトコンストラクタ禁止 */
@@ -55,6 +56,24 @@ public:
   const std::string& GetString() const override
   {
     return m_value;
+  }
+
+  /**
+   * JSON形式の文字列を出力
+   * @param[in,out] outStream 出力先のストリーム
+   */
+  void Dump(std::ostream* outStream) const override
+  {
+    *outStream << "\"" << m_value << "\"" << std::flush;
+  }
+
+  /**
+   * MessagePack形式のバイナリを出力
+   * @param[in,out] outStream 出力先のストリーム
+   */
+  void DumpMsgpack(std::ostream* outStream) const override
+  {
+    msgpack::pack(outStream, m_value);
   }
 };
 }

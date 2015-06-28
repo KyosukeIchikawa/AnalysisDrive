@@ -11,6 +11,9 @@
 #include <string>
 #include <vector>
 #include <map>
+#include <ostream>
+
+#undef GetObject
 
 /** Analysis Drive */
 namespace adlib
@@ -94,6 +97,18 @@ public:
    *          空のmapを返す
    */
   virtual const std::map<std::string, Json>& GetObject() const;
+
+  /**
+   * JSON形式の文字列を出力
+   * @param[in,out] outStream 出力先のストリーム
+   */
+  virtual void Dump(std::ostream* outStream) const;
+
+  /**
+   * MessagePack形式のバイナリを出力
+   * @param[in,out] outStream 出力先のストリーム
+   */
+  virtual void DumpMsgpack(std::ostream* outStream) const;
 };
 }
 #endif // ANALYSISDRIVE_JSONVALUE_H_
