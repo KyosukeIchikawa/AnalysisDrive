@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{eb0ff15e-636a-4952-a4f0-52a8ecafdf53}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="inc">
+      <UniqueIdentifier>{ac5de324-8ad3-47da-833f-634f685ec3e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AnalysisDrive">
+      <UniqueIdentifier>{bfc2f785-ff76-470b-853c-824ca472d58a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AnalysisDrive\AnalysisDrive.h">
+      <Filter>AnalysisDrive</Filter>
+    </ClInclude>
+    <ClInclude Include="AnalysisDrive\Command.h">
+      <Filter>AnalysisDrive</Filter>
+    </ClInclude>
+    <ClInclude Include="AnalysisDrive\CommandLineSetting.h">
+      <Filter>AnalysisDrive</Filter>
+    </ClInclude>
+    <ClInclude Include="AnalysisDrive\Json.h">
+      <Filter>AnalysisDrive</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\JsonValue.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\JsonValueString.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\JsonValueBool.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\JsonValueDouble.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\JsonValueInt.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\JsonValueObject.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\JsonValueArray.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\JsonValueNull.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="AnalysisDrive\JsonParser.h">
+      <Filter>AnalysisDrive</Filter>
+    </ClInclude>
+    <ClInclude Include="AnalysisDrive\CommandLineParser.h">
+      <Filter>AnalysisDrive</Filter>
+    </ClInclude>
+    <ClInclude Include="AnalysisDrive\EasyTimer.h">
+      <Filter>AnalysisDrive</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\CommandLineSetting.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Command.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\JsonParser.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Json.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\JsonValue.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CommandLineParser.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\EasyTimer.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

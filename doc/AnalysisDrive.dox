@@ -1,0 +1,58 @@
+/*! @mainpage
+ * \section sec_license The BSD 3-Cause License
+ * Copyright (C) 2015 kyo <br>
+ * All rights reserved.
+ * 
+ * Redistribution and use in source and binary forms, with or without <br>
+ * modification, are permitted provided that the following conditions are met:
+ * <ol>
+ * <li> Redistributions of source code must retain the above copyright notice, <br>
+ *      this list of conditions and the following disclaimer.
+ * <li> Redistributions in binary form must reproduce the above copyright notice, <br>
+ *      this list of conditions and the following disclaimer in the documentation <br>
+ *      and/or other materials provided with the distribution.
+ * <li> Neither the name of the <organization> nor the names of its contributors <br>
+ *      may be used to endorse or promote products derived from this software <br>
+ *      without specific prior written permission.
+ * </ol>
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND <br>
+ * CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, <br>
+ * INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF <br>
+ * MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE <br>
+ * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR <br>
+ * CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, <br>
+ * SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT <br>
+ * NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; <br>
+ * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) <br>
+ * HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN <br>
+ * CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR <br>
+ * OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, <br>
+ * EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ *
+ * ----
+ * \section sec_license_jap 三条項BSDライセンス 日本語訳
+ * Copyright (C) 2015 kyo <br>
+ * All rights reserved.
+ * 
+ * ソースコード形式であれバイナリ形式であれ, 変更の有無に関わらず, <br>
+ * 以下の条件を満たす限りにおいて, 再配布および利用を許可します.
+ * <ol>
+ * <li> ソースコード形式で再配布する場合, 上記著作権表示, 本条件一覧, <br>
+ *      および下記免責事項を必ず含めてください.
+ * <li> バイナリ形式で再配布する場合, 上記著作権表示, 本条件一覧および下記免責事項を, <br>
+ *      配布物とともに提供される文書 および/または 他の資料に必ず含めてください.
+ * <li> 派生したソースコードおよびバイナリを普及させるために, 著作権者の名前を勝手に <br>
+ *      使用しないでください. 使用したい場合は事前に書面による許可を得てください.
+ * </ol>
+ * 本ソフトウェアは, 著作権者およびコントリビューターによって「現状のまま」提供されて <br>
+ * おり, 明示黙示を問わず, 商業的な使用可能性, および特定の目的に対する適合性に <br>
+ * 関する暗黙の保証も含め, またそれに限定されない, いかなる保証もありません. 著作 <br>
+ * 権者もコントリビューターも, 事由のいかんを問わず, 損害発生の原因いかんを問わ <br>
+ * ず, かつ責任の根拠が契約であるか厳格責任であるか（過失その他の）不法行為で <br>
+ * あるかを問わず, 仮にそのような損害が発生する可能性を知らされていたとしても, 本ソフ <br>
+ * トウェアの使用によって発生した（代替品または代用サービスの調達, 使用の喪失, <br>
+ * データの喪失, 利益の喪失, 業務の中断も含め, またそれに限定されない）直接損害, <br>
+ * 間接損害, 偶発的な損害, 特別損害, 懲罰的損害, または結果損害について, 一切責 <br>
+ * 任を負わないものとします.
+ *
+ */
