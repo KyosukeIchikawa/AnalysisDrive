@@ -260,11 +260,14 @@ const std::map<std::string, Command> CommandLineParser::Impl::MakeCommandArray(
   {
     arguments.emplace_back(argv[i]);
   }
-  // 接頭文字なしの引数として記録
-  commands.emplace(
-    std::piecewise_construct,
-    std::forward_as_tuple(""),
-    std::forward_as_tuple("", arguments));
+  // 接頭文字なしの引数があれば記録
+  if (arguments.size() > 0)
+  {
+    commands.emplace(
+      std::piecewise_construct,
+      std::forward_as_tuple(""),
+      std::forward_as_tuple("", arguments));
+  }
 
   //----- 引数数ループ(接頭文字なしの引数以外) -----//
   for (int i = 1; i <= indexLastPrefixArea; ++i)
