@@ -9,7 +9,7 @@
 #include "IncludeMsgpack.h"
 #include <memory>
 #include <vector>
-#include <map>
+#include <unordered_map>
 #include <string>
 
 /** Analysis Drive */
@@ -168,7 +168,7 @@ Json MsgpackParser::Impl::ParseNumberDouble(const msgpack::object& msgobj)
 Json MsgpackParser::Impl::ParseObject(const msgpack::object& msgobj)
 {
   // ƒoƒbƒtƒ@‚ð—pˆÓ
-  std::map<std::string, Json> obj;
+  Json::Object obj;
 
   // —v‘f‚ª‚ ‚ê‚ÎŠi”[‚·‚é
   if (msgobj.via.map.size > 0U)
@@ -213,7 +213,7 @@ Json MsgpackParser::Impl::ParseObject(const msgpack::object& msgobj)
 Json MsgpackParser::Impl::ParseArray(const msgpack::object& msgobj)
 {
   // ƒoƒbƒtƒ@‚ð—pˆÓ
-  std::vector<Json> arr;
+  Json::Array arr;
 
   // —v‘f‚ª‚ ‚ê‚ÎŠi”[‚·‚é
   if (msgobj.via.array.size > 0U)

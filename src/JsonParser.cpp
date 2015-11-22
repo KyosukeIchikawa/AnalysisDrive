@@ -8,7 +8,7 @@
 #include "Json.h"
 #include <memory>
 #include <vector>
-#include <map>
+#include <unordered_map>
 #include <string>
 
 /** Analysis Drive */
@@ -652,7 +652,7 @@ Json JsonParser::Impl::ParseObject()
   //
 
   // バッファを用意
-  std::map<std::string, Json> obj;
+  Json::Object obj;
   // 1st valueフラグを用意(最初のvalueであればtrueとなる)
   bool flag1stValue = true;
 
@@ -760,7 +760,7 @@ Json JsonParser::Impl::ParseArray()
   //
 
   // バッファを用意
-  std::vector<Json> arr;
+  Json::Array arr;
   // 1st valueフラグを用意(最初のvalueであればtrueとなる)
   bool flag1stValue = true;
 

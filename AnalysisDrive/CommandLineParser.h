@@ -11,7 +11,7 @@
 #include "Command.h"
 #include <memory>
 #include <string>
-#include <map>
+#include <unordered_map>
 
 /** Analysis Drive */
 namespace  adlib
@@ -45,7 +45,7 @@ public:
    * @return コマンドオブジェクトの連想配列
    * @attention これまでのエラーメッセージやワーニングメッセージが初期化される
    */
-  const std::map<std::string, Command> Parse(
+  const std::unordered_map<std::string, Command> Parse(
     const std::vector<CommandLineSetting>& settings,
     int argc,
     const char* const argv[]);

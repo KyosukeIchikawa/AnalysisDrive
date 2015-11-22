@@ -10,7 +10,7 @@
 #include <memory>
 #include <vector>
 #include <string>
-#include <map>
+#include <unordered_map>
 
 /** Analysis Drive */
 namespace adlib
@@ -99,7 +99,7 @@ public:
    * @param[in] argv                コマンドライン引数
    * @param[in] indexLastPrefixArea 最も後ろの接頭文字の影響範囲
    */
-  const std::map<std::string, Command> MakeCommandArray(
+  const std::unordered_map<std::string, Command> MakeCommandArray(
     const std::vector<CommandLineSetting>& settings,
     int argc,
     const char* const argv[],
@@ -244,14 +244,14 @@ int CommandLineParser::Impl::CheckDoublePrefixInput(
  * @param[in] argv                コマンドライン引数
  * @param[in] indexLastPrefixArea 最も後ろの接頭文字の影響範囲
  */
-const std::map<std::string, Command> CommandLineParser::Impl::MakeCommandArray(
+const std::unordered_map<std::string, Command> CommandLineParser::Impl::MakeCommandArray(
   const std::vector<CommandLineSetting>& settings,
   int argc,
   const char* const argv[],
   int indexLastPrefixArea) const
 {
   // 返す連想配列を用意
-  std::map<std::string, Command> commands;
+  std::unordered_map<std::string, Command> commands;
 
   //----- 接頭文字なしの引数を取得(最も後ろの接頭文字の影響範囲の直後から取得) -----//
   // 引数格納用コンテナを用意
@@ -323,7 +323,7 @@ const std::map<std::string, Command> CommandLineParser::Impl::MakeCommandArray(
  * @return コマンドオブジェクトの連想配列
  * @attention これまでのエラーメッセージやワーニングメッセージが初期化される
  */
-const std::map<std::string, Command> CommandLineParser::Parse(
+const std::unordered_map<std::string, Command> CommandLineParser::Parse(
   const std::vector<CommandLineSetting>& settings,
   int argc,
   const char* const argv[])
@@ -346,11 +346,11 @@ const std::map<std::string, Command> CommandLineParser::Parse(
   {
     // エラーコードを格納して空の連想配列を返す
     m_impl->m_errorMsg.emplace_back(err);
-    return std::map<std::string, Command>();
+    return std::unordered_map<std::string, Command>();
   }
 
   // 空の連想配列を返す
-  return std::map<std::string, Command>();
+  return std::unordered_map<std::string, Command>();
 }
 
 /**

@@ -15,7 +15,7 @@
 #include "IncludeMsgpack.h"
 #include <string>
 #include <vector>
-#include <map>
+#include <unordered_map>
 
 /** Analysis Drive */
 namespace adlib
@@ -72,7 +72,7 @@ static bool DefaultBool()
  * @return 空vector
  * @note シングルトンにするため, JsonValueからは切り離し, 関数内に静的なデフォルト値を持つ
  */
-static std::vector<Json>& DefaultArray()
+static Json::Array& DefaultArray()
 {
   static JsonValueArray defaultArray;
   // 初期化してから返す(書き変わっている場合があるため)
@@ -85,7 +85,7 @@ static std::vector<Json>& DefaultArray()
  * @return 空vector
  * @note シングルトンにするため, JsonValueからは切り離し, 関数内に静的なデフォルト値を持つ
  */
-static const std::vector<Json>& DefaultConstArray()
+static const Json::Array& DefaultConstArray()
 {
   static const JsonValueArray defaultArray;
   return defaultArray.GetArray();
@@ -96,7 +96,7 @@ static const std::vector<Json>& DefaultConstArray()
  * @return 空map
  * @note シングルトンにするため, JsonValueからは切り離し, 関数内に静的なデフォルト値を持つ
  */
-static std::map<std::string, Json>& DefaultObject()
+static Json::Object& DefaultObject()
 {
   static JsonValueObject defaultObject;
   // 初期化してから返す(書き変わっている場合があるため)
@@ -109,7 +109,7 @@ static std::map<std::string, Json>& DefaultObject()
  * @return 空map
  * @note シングルトンにするため, JsonValueからは切り離し, 関数内に静的なデフォルト値を持つ
  */
-static const std::map<std::string, Json>& DefaultConstObject()
+static const Json::Object& DefaultConstObject()
 {
   static const JsonValueObject defaultObject;
   return defaultObject.GetObject();
@@ -165,7 +165,7 @@ bool JsonValue::GetBool() const
  * @remarks オーバーライドされない場合の動作 <br>
  *          空のvectorを返す
  */
-std::vector<Json>& JsonValue::GetArray()
+Json::Array& JsonValue::GetArray()
 {
   return DefaultArray();
 }
@@ -176,7 +176,7 @@ std::vector<Json>& JsonValue::GetArray()
  * @remarks オーバーライドされない場合の動作 <br>
  *          空のvectorを返す
  */
-const std::vector<Json>& JsonValue::GetArray() const
+const Json::Array& JsonValue::GetArray() const
 {
   return DefaultConstArray();
 }
@@ -187,7 +187,7 @@ const std::vector<Json>& JsonValue::GetArray() const
  * @remarks オーバーライドされない場合の動作 <br>
  *          空のmapを返す
  */
-std::map<std::string, Json>& JsonValue::GetObject()
+Json::Object& JsonValue::GetObject()
 {
   return DefaultObject();
 }
@@ -198,7 +198,7 @@ std::map<std::string, Json>& JsonValue::GetObject()
  * @remarks オーバーライドされない場合の動作 <br>
  *          空のmapを返す
  */
-const std::map<std::string, Json>& JsonValue::GetObject() const
+const Json::Object& JsonValue::GetObject() const
 {
   return DefaultConstObject();
 }

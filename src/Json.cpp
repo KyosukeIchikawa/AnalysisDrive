@@ -16,7 +16,7 @@
 #include <memory>
 #include <string>
 #include <vector>
-#include <map>
+#include <unordered_map>
 
 /** Analysis Drive */
 namespace adlib
@@ -81,7 +81,7 @@ public:
    * コンストラクタ
    * @param[in] value 値(array型)
    */
-  explicit Impl(const std::vector<Json>& value)
+  explicit Impl(const Json::Array& value)
     :m_jsonValue(std::make_shared<JsonValueArray>(value))
   {
   }
@@ -90,7 +90,7 @@ public:
    * コンストラクタ
    * @param[in] value 値(object型)
    */
-  explicit Impl(const std::map<std::string, Json>& value)
+  explicit Impl(const Json::Object& value)
     :m_jsonValue(std::make_shared<JsonValueObject>(value))
   {
   }
@@ -127,7 +127,7 @@ public:
 /**
  * コンストラクタ
  * @remarks 引数なしのコンストラクタではnullのJSONオブジェクトを作成する
- * @note std::map<std::string, Json>を存在しないキーでアクセスした場合, <br>
+ * @note Json::Objectを存在しないキーでアクセスした場合, <br>
  *       本コンストラクタによってJsonが新規登録される. <br>
  *       これにより, 存在しないキーでアクセスするとnullと同様の値になる.
  */
@@ -167,13 +167,13 @@ Json::Json(bool value) :m_impl(std::make_unique<Impl>(value)) {}
  * コンストラクタ
  * @param[in] value 値(array型)
  */
-Json::Json(const std::vector<Json>& value) :m_impl(std::make_unique<Impl>(value)) {}
+Json::Json(const Json::Array& value) :m_impl(std::make_unique<Impl>(value)) {}
 
 /**
  * コンストラクタ
  * @param[in] value 値(object型)
  */
-Json::Json(const std::map<std::string, Json>& value) :m_impl(std::make_unique<Impl>(value)) {}
+Json::Json(const Json::Object& value) :m_impl(std::make_unique<Impl>(value)) {}
 
 /**
  * コピーコンストラクタ
@@ -324,7 +324,7 @@ bool Json::GetBool() const
  * array値のget
  * @return array値
  */
-std::vector<Json>& Json::GetArray()
+Json::Array& Json::GetArray()
 {
   return m_impl->m_jsonValue->GetArray();
 }
@@ -333,7 +333,7 @@ std::vector<Json>& Json::GetArray()
  * array値のget(const版)
  * @return array値
  */
-const std::vector<Json>& Json::GetArray() const
+const Json::Array& Json::GetArray() const
 {
   return m_impl->m_jsonValue->GetArray();
 }
@@ -342,7 +342,7 @@ const std::vector<Json>& Json::GetArray() const
  * object値のget
  * @return object値
  */
-std::map<std::string, Json>& Json::GetObject()
+Json::Object& Json::GetObject()
 {
   return m_impl->m_jsonValue->GetObject();
 }
@@ -351,7 +351,7 @@ std::map<std::string, Json>& Json::GetObject()
  * object値のget(const版)
  * @return object値
  */
-const std::map<std::string, Json>& Json::GetObject() const
+const Json::Object& Json::GetObject() const
 {
   return m_impl->m_jsonValue->GetObject();
 }

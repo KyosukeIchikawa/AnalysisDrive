@@ -20,7 +20,7 @@ class JsonValueArray final : public JsonValue
 {
 private:
   //! 値
-  std::vector<Json> m_value;
+  Json::Array m_value;
 
 private:
   /** コピー禁止 */
@@ -34,7 +34,7 @@ public:
    * コンストラクタ
    * @tparam value 値
    */
-  explicit JsonValueArray(const std::vector<Json>& value) : m_value(value) {}
+  explicit JsonValueArray(const Json::Array& value) : m_value(value) {}
 
   /** 仮想デストラクタ */
   virtual ~JsonValueArray() {}
@@ -62,7 +62,7 @@ public:
    * array値のget
    * @return array値
    */
-  std::vector<Json>& GetArray() override
+  Json::Array& GetArray() override
   {
     return m_value;
   }
@@ -71,7 +71,7 @@ public:
    * array値のget(const版)
    * @return array値
    */
-  const std::vector<Json>& GetArray() const override
+  const Json::Array& GetArray() const override
   {
     return m_value;
   }

@@ -106,8 +106,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 Collaboration diagram for adlib::Json:</div>
 <div class="dyncontent">
 <div class="center"><img src="classadlib_1_1_json__coll__graph.png" border="0" usemap="#adlib_1_1_json_coll__map" alt="Collaboration graph"/></div>
-<map name="adlib_1_1_json_coll__map" id="adlib_1_1_json_coll__map">
-</map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
@@ -125,6 +123,14 @@ Public Types</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:a2e02ea63c01083f8f3fbff38ddcd156e"><td class="mdescLeft">&#160;</td><td class="mdescRight">JSONの型  <a href="classadlib_1_1_json.html#a2e02ea63c01083f8f3fbff38ddcd156e">More...</a><br /></td></tr>
 <tr class="separator:a2e02ea63c01083f8f3fbff38ddcd156e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a2e85733373b55762f3b1e780ea2052"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1a2e85733373b55762f3b1e780ea2052"></a>
+typedef std::vector&lt; <a class="el" href="classadlib_1_1_json.html">Json</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classadlib_1_1_json.html#a1a2e85733373b55762f3b1e780ea2052">Array</a></td></tr>
+<tr class="memdesc:a1a2e85733373b55762f3b1e780ea2052"><td class="mdescLeft">&#160;</td><td class="mdescRight">JSONオブジェクトでのarray型定義 <br /></td></tr>
+<tr class="separator:a1a2e85733373b55762f3b1e780ea2052"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a293bc1ea57d10f93d41ebafeca2c0c70"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a293bc1ea57d10f93d41ebafeca2c0c70"></a>
+typedef std::unordered_map&lt; std::string, <a class="el" href="classadlib_1_1_json.html">Json</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classadlib_1_1_json.html#a293bc1ea57d10f93d41ebafeca2c0c70">Object</a></td></tr>
+<tr class="memdesc:a293bc1ea57d10f93d41ebafeca2c0c70"><td class="mdescLeft">&#160;</td><td class="mdescRight">JSONオブジェクトでのobject型定義 <br /></td></tr>
+<tr class="separator:a293bc1ea57d10f93d41ebafeca2c0c70"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -140,10 +146,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a7f76e70232ed3ef153b64dfe41506f12"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a33c93a60e7116f1f1b009d812a76d7d8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classadlib_1_1_json.html#a33c93a60e7116f1f1b009d812a76d7d8">Json</a> (bool value)</td></tr>
 <tr class="separator:a33c93a60e7116f1f1b009d812a76d7d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a690a7527930a3359aab359913b5c4c51"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classadlib_1_1_json.html#a690a7527930a3359aab359913b5c4c51">Json</a> (const std::vector&lt; <a class="el" href="classadlib_1_1_json.html">Json</a> &gt; &amp;value)</td></tr>
-<tr class="separator:a690a7527930a3359aab359913b5c4c51"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a234a2e20155c62f643e0d8e166679aae"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classadlib_1_1_json.html#a234a2e20155c62f643e0d8e166679aae">Json</a> (const std::map&lt; std::string, <a class="el" href="classadlib_1_1_json.html">Json</a> &gt; &amp;value)</td></tr>
-<tr class="separator:a234a2e20155c62f643e0d8e166679aae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c3ccee297f7ba84f43dd3168d4ce119"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classadlib_1_1_json.html#a5c3ccee297f7ba84f43dd3168d4ce119">Json</a> (const <a class="el" href="classadlib_1_1_json.html#a1a2e85733373b55762f3b1e780ea2052">Json::Array</a> &amp;value)</td></tr>
+<tr class="separator:a5c3ccee297f7ba84f43dd3168d4ce119"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea0d4fb1c6bc80c9074daf7a4f1f405b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classadlib_1_1_json.html#aea0d4fb1c6bc80c9074daf7a4f1f405b">Json</a> (const <a class="el" href="classadlib_1_1_json.html#a293bc1ea57d10f93d41ebafeca2c0c70">Json::Object</a> &amp;value)</td></tr>
+<tr class="separator:aea0d4fb1c6bc80c9074daf7a4f1f405b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7101f94c944b269682a05dec09afe649"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classadlib_1_1_json.html#a7101f94c944b269682a05dec09afe649">Json</a> (const <a class="el" href="classadlib_1_1_json.html">Json</a> &amp;obj)</td></tr>
 <tr class="separator:a7101f94c944b269682a05dec09afe649"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a65a4deff8147ead817d74056c2532590"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classadlib_1_1_json.html#a65a4deff8147ead817d74056c2532590">Json</a> (<a class="el" href="classadlib_1_1_json.html">Json</a> &amp;&amp;obj)</td></tr>
@@ -178,14 +184,14 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ad97625f67dfe788ebb2c1ebd172e4a4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeb05bb726dca5967c01428c234244f3d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classadlib_1_1_json.html#aeb05bb726dca5967c01428c234244f3d">GetBool</a> () const </td></tr>
 <tr class="separator:aeb05bb726dca5967c01428c234244f3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3450686976adf67399aba59ae0e78af9"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classadlib_1_1_json.html">Json</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classadlib_1_1_json.html#a3450686976adf67399aba59ae0e78af9">GetArray</a> ()</td></tr>
-<tr class="separator:a3450686976adf67399aba59ae0e78af9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7151dee157fdb1e169a8a48b9f38dfbe"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; <a class="el" href="classadlib_1_1_json.html">Json</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classadlib_1_1_json.html#a7151dee157fdb1e169a8a48b9f38dfbe">GetArray</a> () const </td></tr>
-<tr class="separator:a7151dee157fdb1e169a8a48b9f38dfbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a31b04805f091976dcf016a1697cb4077"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, <a class="el" href="classadlib_1_1_json.html">Json</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classadlib_1_1_json.html#a31b04805f091976dcf016a1697cb4077">GetObject</a> ()</td></tr>
-<tr class="separator:a31b04805f091976dcf016a1697cb4077"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8acc4d44c59fba7d160093df9ed718ee"><td class="memItemLeft" align="right" valign="top">const std::map&lt; std::string, <a class="el" href="classadlib_1_1_json.html">Json</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classadlib_1_1_json.html#a8acc4d44c59fba7d160093df9ed718ee">GetObject</a> () const </td></tr>
-<tr class="separator:a8acc4d44c59fba7d160093df9ed718ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2ba86fb6fc84fbe4f35c7d00db4bbb8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classadlib_1_1_json.html#a1a2e85733373b55762f3b1e780ea2052">Json::Array</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classadlib_1_1_json.html#aa2ba86fb6fc84fbe4f35c7d00db4bbb8">GetArray</a> ()</td></tr>
+<tr class="separator:aa2ba86fb6fc84fbe4f35c7d00db4bbb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf5c6cdf701dd2de4ae195c448f337fd"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classadlib_1_1_json.html#a1a2e85733373b55762f3b1e780ea2052">Json::Array</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classadlib_1_1_json.html#adf5c6cdf701dd2de4ae195c448f337fd">GetArray</a> () const </td></tr>
+<tr class="separator:adf5c6cdf701dd2de4ae195c448f337fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c7a895a0c132666258a94b87078d249"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classadlib_1_1_json.html#a293bc1ea57d10f93d41ebafeca2c0c70">Json::Object</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classadlib_1_1_json.html#a6c7a895a0c132666258a94b87078d249">GetObject</a> ()</td></tr>
+<tr class="separator:a6c7a895a0c132666258a94b87078d249"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b93c9bf8a9016bd68376abb6090533d"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classadlib_1_1_json.html#a293bc1ea57d10f93d41ebafeca2c0c70">Json::Object</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classadlib_1_1_json.html#a6b93c9bf8a9016bd68376abb6090533d">GetObject</a> () const </td></tr>
+<tr class="separator:a6b93c9bf8a9016bd68376abb6090533d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae8954faec3d6d06fd8d00f5ff78bbfce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classadlib_1_1_json.html#ae8954faec3d6d06fd8d00f5ff78bbfce">Dump</a> (std::ostream *outStream) const </td></tr>
 <tr class="separator:ae8954faec3d6d06fd8d00f5ff78bbfce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af7cf38f616a1d4bbc1f266ae8257c538"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classadlib_1_1_json.html#af7cf38f616a1d4bbc1f266ae8257c538">DumpMsgpack</a> (std::ostream *outStream) const </td></tr>
@@ -249,7 +255,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>コンストラクタ </p><dl class="section remark"><dt>Remarks</dt><dd>引数なしのコンストラクタではnullのJSONオブジェクトを作成する </dd></dl>
-<dl class="section note"><dt>Note</dt><dd>std::map&lt;std::string, Json&gt;を存在しないキーでアクセスした場合, <br />
+<dl class="section note"><dt>Note</dt><dd>Json::Objectを存在しないキーでアクセスした場合, <br />
  本コンストラクタによってJsonが新規登録される. <br />
  これにより, 存在しないキーでアクセスするとnullと同様の値になる. </dd></dl>
 
@@ -405,7 +411,7 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a690a7527930a3359aab359913b5c4c51"></a>
+<a class="anchor" id="a5c3ccee297f7ba84f43dd3168d4ce119"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -415,7 +421,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">adlib::Json::Json </td>
           <td>(</td>
-          <td class="paramtype">const std::vector&lt; <a class="el" href="classadlib_1_1_json.html">Json</a> &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classadlib_1_1_json.html#a1a2e85733373b55762f3b1e780ea2052">Json::Array</a> &amp;&#160;</td>
           <td class="paramname"><em>value</em></td><td>)</td>
           <td></td>
         </tr>
@@ -435,7 +441,7 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a234a2e20155c62f643e0d8e166679aae"></a>
+<a class="anchor" id="aea0d4fb1c6bc80c9074daf7a4f1f405b"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -445,7 +451,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">adlib::Json::Json </td>
           <td>(</td>
-          <td class="paramtype">const std::map&lt; std::string, <a class="el" href="classadlib_1_1_json.html">Json</a> &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classadlib_1_1_json.html#a293bc1ea57d10f93d41ebafeca2c0c70">Json::Object</a> &amp;&#160;</td>
           <td class="paramname"><em>value</em></td><td>)</td>
           <td></td>
         </tr>
@@ -578,12 +584,12 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a3450686976adf67399aba59ae0e78af9"></a>
+<a class="anchor" id="aa2ba86fb6fc84fbe4f35c7d00db4bbb8"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;<a class="el" href="classadlib_1_1_json.html">Json</a>&gt;&amp; adlib::Json::GetArray </td>
+          <td class="memname"><a class="el" href="classadlib_1_1_json.html#a1a2e85733373b55762f3b1e780ea2052">Json::Array</a>&amp; adlib::Json::GetArray </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -594,12 +600,12 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a7151dee157fdb1e169a8a48b9f38dfbe"></a>
+<a class="anchor" id="adf5c6cdf701dd2de4ae195c448f337fd"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const std::vector&lt;<a class="el" href="classadlib_1_1_json.html">Json</a>&gt;&amp; adlib::Json::GetArray </td>
+          <td class="memname">const <a class="el" href="classadlib_1_1_json.html#a1a2e85733373b55762f3b1e780ea2052">Json::Array</a>&amp; adlib::Json::GetArray </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -658,12 +664,12 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a31b04805f091976dcf016a1697cb4077"></a>
+<a class="anchor" id="a6c7a895a0c132666258a94b87078d249"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::map&lt;std::string, <a class="el" href="classadlib_1_1_json.html">Json</a>&gt;&amp; adlib::Json::GetObject </td>
+          <td class="memname"><a class="el" href="classadlib_1_1_json.html#a293bc1ea57d10f93d41ebafeca2c0c70">Json::Object</a>&amp; adlib::Json::GetObject </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -674,12 +680,12 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a8acc4d44c59fba7d160093df9ed718ee"></a>
+<a class="anchor" id="a6b93c9bf8a9016bd68376abb6090533d"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const std::map&lt;std::string, <a class="el" href="classadlib_1_1_json.html">Json</a>&gt;&amp; adlib::Json::GetObject </td>
+          <td class="memname">const <a class="el" href="classadlib_1_1_json.html#a293bc1ea57d10f93d41ebafeca2c0c70">Json::Object</a>&amp; adlib::Json::GetObject </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -878,7 +884,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 12 2015 14:43:20 for Analysis Drive by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Nov 23 2015 01:50:02 for Analysis Drive by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

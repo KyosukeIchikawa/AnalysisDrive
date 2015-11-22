@@ -107,7 +107,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_command_8h.html">Command.h</a>&quot;</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;map&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;unordered_map&gt;</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">/** Analysis Drive */</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">namespace  </span><a class="code" href="namespaceadlib.html">adlib</a></div>
@@ -141,7 +141,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment">   * @return コマンドオブジェクトの連想配列</span></div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment">   * @attention これまでのエラーメッセージやワーニングメッセージが初期化される</span></div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keyword">const</span> std::map&lt;std::string, Command&gt; <a class="code" href="classadlib_1_1_command_line_parser.html#a6ca6be08a98f2ca01057efcee6caf0c9">Parse</a>(</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keyword">const</span> std::unordered_map&lt;std::string, Command&gt; <a class="code" href="classadlib_1_1_command_line_parser.html#a0932c583ee43e5f95192f36af92e6dee">Parse</a>(</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keyword">const</span> std::vector&lt;CommandLineSetting&gt;&amp; settings,</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordtype">int</span> argc,</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span>* <span class="keyword">const</span> argv[]);</div>
@@ -161,18 +161,18 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;}</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">#endif // ANALYSISDRIVE_COMMANDLINEPARSER_H_</span></div>
 <div class="ttc" id="namespaceadlib_html"><div class="ttname"><a href="namespaceadlib.html">adlib</a></div><div class="ttdef"><b>Definition:</b> <a href="_command_8h_source.html#l00015">Command.h:15</a></div></div>
+<div class="ttc" id="classadlib_1_1_command_line_parser_html_a0932c583ee43e5f95192f36af92e6dee"><div class="ttname"><a href="classadlib_1_1_command_line_parser.html#a0932c583ee43e5f95192f36af92e6dee">adlib::CommandLineParser::Parse</a></div><div class="ttdeci">const std::unordered_map&lt; std::string, Command &gt; Parse(const std::vector&lt; CommandLineSetting &gt; &amp;settings, int argc, const char *const argv[])</div></div>
 <div class="ttc" id="classadlib_1_1_command_line_parser_html_a213a3e344a0b7d93e9c3291846f032d4"><div class="ttname"><a href="classadlib_1_1_command_line_parser.html#a213a3e344a0b7d93e9c3291846f032d4">adlib::CommandLineParser::~CommandLineParser</a></div><div class="ttdeci">virtual ~CommandLineParser()</div></div>
 <div class="ttc" id="_command_8h_html"><div class="ttname"><a href="_command_8h.html">Command.h</a></div><div class="ttdoc">コマンドオブジェクト </div></div>
 <div class="ttc" id="classadlib_1_1_command_line_parser_html_a5752cfd030ec1084cfaae97c6d2480e4"><div class="ttname"><a href="classadlib_1_1_command_line_parser.html#a5752cfd030ec1084cfaae97c6d2480e4">adlib::CommandLineParser::ErrorMessage</a></div><div class="ttdeci">const std::vector&lt; std::string &gt; &amp; ErrorMessage() const </div></div>
 <div class="ttc" id="_command_line_setting_8h_html"><div class="ttname"><a href="_command_line_setting_8h.html">CommandLineSetting.h</a></div><div class="ttdoc">コマンドライン読み込み設定 </div></div>
-<div class="ttc" id="classadlib_1_1_command_line_parser_html_a6ca6be08a98f2ca01057efcee6caf0c9"><div class="ttname"><a href="classadlib_1_1_command_line_parser.html#a6ca6be08a98f2ca01057efcee6caf0c9">adlib::CommandLineParser::Parse</a></div><div class="ttdeci">const std::map&lt; std::string, Command &gt; Parse(const std::vector&lt; CommandLineSetting &gt; &amp;settings, int argc, const char *const argv[])</div></div>
 <div class="ttc" id="classadlib_1_1_command_line_parser_html"><div class="ttname"><a href="classadlib_1_1_command_line_parser.html">adlib::CommandLineParser</a></div><div class="ttdef"><b>Definition:</b> <a href="_command_line_parser_8h_source.html#l00020">CommandLineParser.h:20</a></div></div>
 <div class="ttc" id="classadlib_1_1_command_line_parser_html_ae3e75763300e26fa1ff6ab19ba32eb22"><div class="ttname"><a href="classadlib_1_1_command_line_parser.html#ae3e75763300e26fa1ff6ab19ba32eb22">adlib::CommandLineParser::GetCommandArguments</a></div><div class="ttdeci">const std::string &amp; GetCommandArguments() const </div></div>
 <div class="ttc" id="classadlib_1_1_command_line_parser_html_a75f2621f8fb68468226e33348c202bd1"><div class="ttname"><a href="classadlib_1_1_command_line_parser.html#a75f2621f8fb68468226e33348c202bd1">adlib::CommandLineParser::CommandLineParser</a></div><div class="ttdeci">CommandLineParser()</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 12 2015 14:43:19 for Analysis Drive by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Nov 23 2015 01:50:02 for Analysis Drive by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

@@ -10,7 +10,7 @@
 #include "Json.h"
 #include <string>
 #include <vector>
-#include <map>
+#include <unordered_map>
 #include <ostream>
 
 #undef GetObject
@@ -72,7 +72,7 @@ public:
    * @remarks オーバーライドされない場合の動作 <br>
    *          空のvectorを返す
    */
-  virtual std::vector<Json>& GetArray();
+  virtual Json::Array& GetArray();
 
   /**
    * array値のget(const版)
@@ -80,7 +80,7 @@ public:
    * @remarks オーバーライドされない場合の動作 <br>
    *          空のvectorを返す
    */
-  virtual const std::vector<Json>& GetArray() const;
+  virtual const Json::Array& GetArray() const;
 
   /**
    * object値のget
@@ -88,7 +88,7 @@ public:
    * @remarks オーバーライドされない場合の動作 <br>
    *          空のmapを返す
    */
-  virtual std::map<std::string, Json>& GetObject();
+  virtual Json::Object& GetObject();
 
   /**
    * object値のget(const版)
@@ -96,7 +96,7 @@ public:
    * @remarks オーバーライドされない場合の動作 <br>
    *          空のmapを返す
    */
-  virtual const std::map<std::string, Json>& GetObject() const;
+  virtual const Json::Object& GetObject() const;
 
   /**
    * JSON形式の文字列を出力

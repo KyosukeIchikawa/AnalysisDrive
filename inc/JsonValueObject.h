@@ -11,7 +11,7 @@
 #include "Json.h"
 #include "IncludeMsgpack.h"
 #include <string>
-#include <map>
+#include <unordered_map>
 
 /** Analysis Drive */
 namespace adlib
@@ -21,7 +21,7 @@ class JsonValueObject final : public JsonValue
 {
 private:
   //! 値
-  std::map<std::string, Json> m_value;
+  Json::Object m_value;
 
 private:
   /** コピー禁止 */
@@ -35,7 +35,7 @@ public:
    * コンストラクタ
    * @tparam value 値
    */
-  explicit JsonValueObject(const std::map<std::string, Json>& value) : m_value(value) {}
+  explicit JsonValueObject(const Json::Object& value) : m_value(value) {}
 
   /** 仮想デストラクタ */
   virtual ~JsonValueObject() {}
@@ -63,7 +63,7 @@ public:
    * object値のget
    * @return object値
    */
-  std::map<std::string, Json>& GetObject() override
+  Json::Object& GetObject() override
   {
     return m_value;
   }
@@ -72,7 +72,7 @@ public:
    * object値のget(const版)
    * @return object値
    */
-  const std::map<std::string, Json>& GetObject() const override
+  const Json::Object& GetObject() const override
   {
     return m_value;
   }

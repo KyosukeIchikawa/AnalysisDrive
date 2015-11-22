@@ -10,7 +10,7 @@
 #include <memory>
 #include <string>
 #include <vector>
-#include <map>
+#include <unordered_map>
 #include <ostream>
 
 /** Analysis Drive */
@@ -32,6 +32,11 @@ public:
     OBJECT         /*!< object         */
   };
 
+  //! JSONオブジェクトでのarray型定義
+  typedef std::vector<Json> Array;
+  //! JSONオブジェクトでのobject型定義
+  typedef std::unordered_map<std::string, Json> Object;
+
 private:
   //! Pimplイディオム
   class Impl;
@@ -41,7 +46,7 @@ public:
   /**
    * コンストラクタ
    * @remarks 引数なしのコンストラクタではnullのJSONオブジェクトを作成する
-   * @note std::map<std::string, Json>を存在しないキーでアクセスした場合, <br>
+   * @note Json::Objectを存在しないキーでアクセスした場合, <br>
    *       本コンストラクタによってJsonが新規登録される. <br>
    *       これにより, 存在しないキーでアクセスするとnullと同様の値になる.
    */
@@ -81,13 +86,13 @@ public:
    * コンストラクタ
    * @param[in] value 値(array型)
    */
-  explicit Json(const std::vector<Json>& value);
+  explicit Json(const Json::Array& value);
 
   /**
    * コンストラクタ
    * @param[in] value 値(object型)
    */
-  explicit Json(const std::map<std::string, Json>& value);
+  explicit Json(const Json::Object& value);
 
   /**
    * コピーコンストラクタ
@@ -192,25 +197,25 @@ public:
    * array値のget
    * @return array値
    */
-  std::vector<Json>& GetArray();
+  Json::Array& GetArray();
 
   /**
    * array値のget(const版)
    * @return array値
    */
-  const std::vector<Json>& GetArray() const;
+  const Json::Array& GetArray() const;
 
   /**
    * object値のget
    * @return object値
    */
-  std::map<std::string, Json>& GetObject();
+  Json::Object& GetObject();
 
   /**
    * object値のget(const版)
    * @return object値
    */
-  const std::map<std::string, Json>& GetObject() const;
+  const Json::Object& GetObject() const;
 
   /**
    * JSON形式の文字列を出力
